@@ -11,7 +11,7 @@ export const isEmail = (email) => {
 }
 
 export const isPhone = (phone) => {
-  const phoneRegex = /^\+?[\d\s\-\(\)]{10,}$/
+  const phoneRegex = /^\+?[\d\s\-()]{10,}$/
   return phoneRegex.test(phone)
 }
 
