@@ -102,16 +102,23 @@ export const validateReview = (review) => {
     errors.rating = 'Rating must be between 1 and 5'
   }
   
-  if (!isRequired(review.comment)) {
+if (!isRequired(review.comment)) {
     errors.comment = 'Comment is required'
   } else if (!minLength(review.comment, 10)) {
     errors.comment = 'Comment must be at least 10 characters long'
+  } else if (!maxLength(review.comment, 500)) {
+    errors.comment = 'Comment must be 500 characters or less'
   }
   
   return {
     isValid: Object.keys(errors).length === 0,
     errors
   }
+}
+
+export const isValidRating = (rating) => {
+  const num = Number(rating)
+  return Number.isInteger(num) && num >= 1 && num <= 5
 }
 
 export const validateSearchFilters = (filters) => {

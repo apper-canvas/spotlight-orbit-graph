@@ -8,19 +8,19 @@ import Button from '@/components/atoms/Button'
 import Loading from '@/components/ui/Loading'
 import Error from '@/components/ui/Error'
 import ApperIcon from '@/components/ApperIcon'
+import ReviewForm from '@/components/molecules/ReviewForm'
 import { businessService } from '@/services/api/businessService'
 import { reviewService } from '@/services/api/reviewService'
-
 const BusinessDetailPage = () => {
   const { id } = useParams()
   const navigate = useNavigate()
   const [business, setBusiness] = useState(null)
   const [reviews, setReviews] = useState([])
   const [loading, setLoading] = useState(true)
-  const [error, setError] = useState('')
+const [error, setError] = useState('')
   const [activeTab, setActiveTab] = useState('overview')
   const [isSaved, setIsSaved] = useState(false)
-
+  const [showReviewForm, setShowReviewForm] = useState(false)
   const loadBusinessDetail = async () => {
     try {
       setLoading(true)
@@ -39,12 +39,16 @@ const BusinessDetailPage = () => {
     } finally {
       setLoading(false)
     }
+}
+
+  const handleReviewSuccess = () => {
+    setShowReviewForm(false)
+    loadBusinessDetail() // Refresh to show new review
   }
 
   useEffect(() => {
     loadBusinessDetail()
   }, [id])
-
   const handleSave = () => {
     setIsSaved(!isSaved)
     toast.success(isSaved ? 'Removed from saved' : 'Added to saved')
@@ -272,16 +276,39 @@ const BusinessDetailPage = () => {
               </motion.div>
             )}
 
-            {activeTab === 'reviews' && (
+{activeTab === 'reviews' && (
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 className="space-y-4"
               >
+                {/* Write Review Button */}
+                <div className="flex justify-between items-center">
+                  <h3 className="text-lg font-semibold text-slate-900">Reviews</h3>
+                  <Button
+                    variant="primary"
+                    size="sm"
+                    icon="PlusCircle"
+                    onClick={() => setShowReviewForm(!showReviewForm)}
+                  >
+                    Write Review
+                  </Button>
+                </div>
+
+                {/* Review Form */}
+                <ReviewForm
+                  businessId={id}
+                  isOpen={showReviewForm}
+                  onSuccess={handleReviewSuccess}
+                  onCancel={() => setShowReviewForm(false)}
+                />
+
+                {/* Reviews List */}
                 {reviews.length === 0 ? (
                   <div className="text-center py-8">
                     <ApperIcon name="MessageSquare" className="w-12 h-12 text-gray-400 mx-auto mb-4" />
                     <p className="text-slate-500">No reviews yet</p>
+                    <p className="text-slate-400 text-sm mt-2">Be the first to share your experience!</p>
                   </div>
                 ) : (
                   reviews.map((review, index) => (
