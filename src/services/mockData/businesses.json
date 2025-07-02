@@ -1,0 +1,146 @@
+[
+  {
+    "Id": 1,
+    "name": "Brew & Bean Coffee House",
+    "category": "cafe",
+    "address": "123 Main Street, Downtown",
+    "coordinates": { "lat": 40.7128, "lng": -74.0060 },
+    "rating": 4.5,
+    "reviewCount": 127,
+    "images": [
+      "https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    ],
+    "hours": [
+      { "day": "Monday", "open": "06:00", "close": "19:00" },
+      { "day": "Tuesday", "open": "06:00", "close": "19:00" },
+      { "day": "Wednesday", "open": "06:00", "close": "19:00" },
+      { "day": "Thursday", "open": "06:00", "close": "19:00" },
+      { "day": "Friday", "open": "06:00", "close": "20:00" },
+      { "day": "Saturday", "open": "07:00", "close": "20:00" },
+      { "day": "Sunday", "open": "07:00", "close": "18:00" }
+    ],
+    "phone": "(555) 123-4567",
+    "website": "https://brewandbean.com"
+  },
+  {
+    "Id": 2,
+    "name": "Bella's Trattoria",
+    "category": "restaurant",
+    "address": "456 Oak Avenue, Little Italy",
+    "coordinates": { "lat": 40.7200, "lng": -74.0100 },
+    "rating": 4.8,
+    "reviewCount": 89,
+    "images": [
+      "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    ],
+    "hours": [
+      { "day": "Monday", "open": "17:00", "close": "22:00" },
+      { "day": "Tuesday", "open": "17:00", "close": "22:00" },
+      { "day": "Wednesday", "open": "17:00", "close": "22:00" },
+      { "day": "Thursday", "open": "17:00", "close": "22:00" },
+      { "day": "Friday", "open": "17:00", "close": "23:00" },
+      { "day": "Saturday", "open": "16:00", "close": "23:00" },
+      { "day": "Sunday", "open": "16:00", "close": "21:00" }
+    ],
+    "phone": "(555) 234-5678",
+    "website": "https://bellastrattoria.com"
+  },
+  {
+    "Id": 3,
+    "name": "Style & Grace Salon",
+    "category": "salon",
+    "address": "789 Elm Street, Fashion District",
+    "coordinates": { "lat": 40.7150, "lng": -74.0050 },
+    "rating": 4.3,
+    "reviewCount": 156,
+    "images": [
+      "https://images.unsplash.com/photo-1560066984-138dadb4c035?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    ],
+    "hours": [
+      { "day": "Monday", "open": "09:00", "close": "18:00" },
+      { "day": "Tuesday", "open": "09:00", "close": "20:00" },
+      { "day": "Wednesday", "open": "09:00", "close": "20:00" },
+      { "day": "Thursday", "open": "09:00", "close": "20:00" },
+      { "day": "Friday", "open": "09:00", "close": "20:00" },
+      { "day": "Saturday", "open": "08:00", "close": "18:00" },
+      { "day": "Sunday", "open": "10:00", "close": "16:00" }
+    ],
+    "phone": "(555) 345-6789",
+    "website": "https://styleandgrace.com"
+  },
+  {
+    "Id": 4,
+    "name": "The Corner Bookshop",
+    "category": "shop",
+    "address": "321 Pine Street, Arts Quarter",
+    "coordinates": { "lat": 40.7080, "lng": -74.0120 },
+    "rating": 4.6,
+    "reviewCount": 73,
+    "images": [
+      "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    ],
+    "hours": [
+      { "day": "Monday", "open": "10:00", "close": "19:00" },
+      { "day": "Tuesday", "open": "10:00", "close": "19:00" },
+      { "day": "Wednesday", "open": "10:00", "close": "19:00" },
+      { "day": "Thursday", "open": "10:00", "close": "21:00" },
+      { "day": "Friday", "open": "10:00", "close": "21:00" },
+      { "day": "Saturday", "open": "09:00", "close": "20:00" },
+      { "day": "Sunday", "open": "11:00", "close": "17:00" }
+    ],
+    "phone": "(555) 456-7890",
+    "website": "https://cornerbookshop.com"
+  },
+  {
+    "Id": 5,
+    "name": "Fix-It Pro Services",
+    "category": "service",
+    "address": "654 Maple Drive, Industrial Area",
+    "coordinates": { "lat": 40.7180, "lng": -74.0080 },
+    "rating": 4.7,
+    "reviewCount": 92,
+    "images": [
+      "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1504148455328-c376907d081c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    ],
+    "hours": [
+      { "day": "Monday", "open": "08:00", "close": "17:00" },
+      { "day": "Tuesday", "open": "08:00", "close": "17:00" },
+      { "day": "Wednesday", "open": "08:00", "close": "17:00" },
+      { "day": "Thursday", "open": "08:00", "close": "17:00" },
+      { "day": "Friday", "open": "08:00", "close": "17:00" },
+      { "day": "Saturday", "open": "09:00", "close": "15:00" },
+      { "day": "Sunday", "open": "Closed", "close": "Closed" }
+    ],
+    "phone": "(555) 567-8901",
+    "website": "https://fixitpro.com"
+  },
+  {
+    "Id": 6,
+    "name": "Sunrise Diner",
+    "category": "restaurant",
+    "address": "987 Broad Street, Central Plaza",
+    "coordinates": { "lat": 40.7160, "lng": -74.0070 },
+    "rating": 4.2,
+    "reviewCount": 201,
+    "images": [
+      "https://images.unsplash.com/photo-1567521464027-f127ff144326?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1551218808-94e220e084d2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    ],
+    "hours": [
+      { "day": "Monday", "open": "06:00", "close": "15:00" },
+      { "day": "Tuesday", "open": "06:00", "close": "15:00" },
+      { "day": "Wednesday", "open": "06:00", "close": "15:00" },
+      { "day": "Thursday", "open": "06:00", "close": "15:00" },
+      { "day": "Friday", "open": "06:00", "close": "15:00" },
+      { "day": "Saturday", "open": "06:00", "close": "16:00" },
+      { "day": "Sunday", "open": "07:00", "close": "16:00" }
+    ],
+    "phone": "(555) 678-9012",
+    "website": "https://sunrisediner.com"
+  }
+]

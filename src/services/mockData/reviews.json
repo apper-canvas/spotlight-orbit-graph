@@ -1,0 +1,106 @@
+[
+  {
+    "Id": 1,
+    "businessId": 1,
+    "userName": "Sarah M.",
+    "rating": 5,
+    "comment": "Amazing coffee and cozy atmosphere! The baristas are super friendly and know their craft. Perfect spot for morning meetings or solo work sessions.",
+    "date": "2024-01-15"
+  },
+  {
+    "Id": 2,
+    "businessId": 1,
+    "userName": "Mike T.",
+    "rating": 4,
+    "comment": "Great coffee, though it can get quite busy during peak hours. The pastries are fresh and delicious. Love the local artwork on the walls.",
+    "date": "2024-01-10"
+  },
+  {
+    "Id": 3,
+    "businessId": 1,
+    "userName": "Emma L.",
+    "rating": 5,
+    "comment": "My go-to coffee shop! The seasonal drinks are creative and the WiFi is reliable. Staff always remembers my order. Highly recommend!",
+    "date": "2024-01-08"
+  },
+  {
+    "Id": 4,
+    "businessId": 2,
+    "userName": "David R.",
+    "rating": 5,
+    "comment": "Authentic Italian cuisine with generous portions. The pasta is made fresh daily and you can taste the difference. Service is impeccable!",
+    "date": "2024-01-12"
+  },
+  {
+    "Id": 5,
+    "businessId": 2,
+    "userName": "Lisa K.",
+    "rating": 5,
+    "comment": "Romantic atmosphere and incredible food. The wine selection is excellent and the staff is knowledgeable. Perfect for date nights!",
+    "date": "2024-01-09"
+  },
+  {
+    "Id": 6,
+    "businessId": 3,
+    "userName": "Jennifer P.",
+    "rating": 4,
+    "comment": "Great haircut and styling! The salon is clean and modern. My stylist listened to exactly what I wanted. Will definitely be back.",
+    "date": "2024-01-14"
+  },
+  {
+    "Id": 7,
+    "businessId": 3,
+    "userName": "Amy C.",
+    "rating": 4,
+    "comment": "Professional service and good results. The prices are reasonable for the quality. Booking can be a bit tricky during busy seasons.",
+    "date": "2024-01-07"
+  },
+  {
+    "Id": 8,
+    "businessId": 4,
+    "userName": "Robert H.",
+    "rating": 5,
+    "comment": "Hidden gem for book lovers! Great selection of both new and rare books. The owner is passionate and offers great recommendations.",
+    "date": "2024-01-11"
+  },
+  {
+    "Id": 9,
+    "businessId": 4,
+    "userName": "Maria G.",
+    "rating": 4,
+    "comment": "Cozy bookstore with character. Love browsing the poetry section. They host great author events too. Coffee corner is a nice touch.",
+    "date": "2024-01-06"
+  },
+  {
+    "Id": 10,
+    "businessId": 5,
+    "userName": "Tom W.",
+    "rating": 5,
+    "comment": "Reliable and honest service! Fixed my appliance quickly and for a fair price. They explain everything clearly and don't oversell.",
+    "date": "2024-01-13"
+  },
+  {
+    "Id": 11,
+    "businessId": 5,
+    "userName": "Nancy B.",
+    "rating": 4,
+    "comment": "Prompt service and professional work. They arrived on time and cleaned up after themselves. Prices are competitive in the area.",
+    "date": "2024-01-05"
+  },
+  {
+    "Id": 12,
+    "businessId": 6,
+    "userName": "Carlos M.",
+    "rating": 4,
+    "comment": "Classic American diner experience! Huge portions and comfort food done right. The pie selection is outstanding. Cash only, heads up!",
+    "date": "2024-01-16"
+  },
+  {
+    "Id": 13,
+    "businessId": 6,
+    "userName": "Helen D.",
+    "rating": 4,
+    "comment": "Nostalgic atmosphere and hearty meals. The breakfast is served all day which is great. Service can be slow when busy but worth the wait.",
+    "date": "2024-01-04"
+  }
+]
