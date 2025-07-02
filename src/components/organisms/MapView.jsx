@@ -17,13 +17,15 @@ const MapView = ({ businesses, onBusinessSelect, selectedBusiness, showList = fa
   }
 
 return (
-    <div className="relative h-full">
+<div className="relative h-full">
       {/* Map Container */}
       <div 
-        className="relative h-full bg-gradient-to-br from-blue-50 to-indigo-100 rounded-lg overflow-hidden"
+        className="relative h-full bg-gradient-to-br from-blue-50 to-indigo-100 rounded-lg overflow-hidden cursor-pointer"
         onClick={(e) => {
-          // Prevent white screen by handling map background clicks
-          e.stopPropagation()
+          // Handle map background clicks - deselect business if clicked on background
+          if (e.target === e.currentTarget) {
+            onBusinessSelect?.(null)
+          }
         }}
       >
         {/* Simulated Map Background */}
