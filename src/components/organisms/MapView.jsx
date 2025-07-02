@@ -16,10 +16,16 @@ const MapView = ({ businesses, onBusinessSelect, selectedBusiness, showList = fa
     onBusinessSelect?.(business)
   }
 
-  return (
+return (
     <div className="relative h-full">
       {/* Map Container */}
-      <div className="relative h-full bg-gradient-to-br from-blue-50 to-indigo-100 rounded-lg overflow-hidden">
+      <div 
+        className="relative h-full bg-gradient-to-br from-blue-50 to-indigo-100 rounded-lg overflow-hidden"
+        onClick={(e) => {
+          // Prevent white screen by handling map background clicks
+          e.stopPropagation()
+        }}
+      >
         {/* Simulated Map Background */}
         <div className="absolute inset-0 opacity-20">
           <div className="grid grid-cols-8 grid-rows-8 h-full">
